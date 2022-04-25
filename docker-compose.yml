@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  app:
+    build: .
+    container_name: container_resurrexit
+    ports:
+      - 3050:3000
+    environment:
+      - APP_PORT=3000
+    tty: true
+    stdin_open: true
