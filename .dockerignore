@@ -1,0 +1,7 @@
+node_modules
+test
+docker-compose.yml
+.env
+Dockerfile
+.prettierrc
+.git
