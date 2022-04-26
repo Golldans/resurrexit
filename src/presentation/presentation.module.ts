@@ -1,8 +1,10 @@
 import { Module } from '@nestjs/common';
+import { DomainModule } from 'src/domain/domain.module';
+import { UserController } from './controllers/user.controller';
 
 @Module({
-  imports: [],
+  imports: [DomainModule],
   providers: [],
-  controllers: [],
+  controllers: [UserController],
 })
 export class PresentationModule {}
