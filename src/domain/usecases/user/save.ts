@@ -14,7 +14,7 @@ export class SaveUser {
 
       return prisma.user.create({
         data: {
-          name: user.name,
+          username: user.username,
           email: user.email,
           password: hashedPassword,
         },
